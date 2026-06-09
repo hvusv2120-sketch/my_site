@@ -1,0 +1,93 @@
+<!DOCTYPE html>
+<html lang="he" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <title>מרכז תקשוב - פתיחת קריאה</title>
+</head>
+<body>
+
+    <header>
+        <h1>מרכז תקשוב</h1>
+        <h2>הבית הטכנולוגי והמחשוב של הארגון</h2>
+        <nav>
+            <ul>
+                <li><a href="index.html">דף הבית</a></li>
+                <li><a href="services.html">שירותים</a></li>
+                <li><a href="ticket.html">פתיחת קריאה</a></li>
+            </ul>
+        </nav>
+    </header>
+
+    <main>
+        <section>
+            <h2>טופס פתיחת קריאת תקלה</h2>
+            <p>אנא מלאו את פרטי התקלה בצורה מפורטת כדי שנוכל לטפל בפנייתכם בהקדם.</p>
+            
+            <form action="#" method="POST">
+                
+                <p>
+                    <label for="fullName">שם מלא (חובה):</label><br>
+                    <input type="text" id="fullName" name="fullName" required>
+                </p>
+                
+                <p>
+                    <label for="phone">טלפון (חובה):</label><br>
+                    <input type="tel" id="phone" name="phone" required>
+                </p>
+                
+                <p>
+                    <label for="email">דואר אלקטרוני:</label><br>
+                    <input type="email" id="email" name="email">
+                </p>
+                
+                <p>
+                    <label for="location">מיקום התקלה (בניין/חדר):</label><br>
+                    <input type="text" id="location" name="location">
+                </p>
+                
+                <p>
+                    <label for="issueType">סוג תקלה:</label><br>
+                    <select id="issueType" name="issueType">
+                        <option value="hardware">תקלת חומרה (מחשב, מסך, מדפסת)</option>
+                        <option value="software">תקלת תוכנה ומערכות הפעלה</option>
+                        <option value="network">בעיית רשת ואינטרנט</option>
+                        <option value="telephony">טלפוניה ומרכזיות</option>
+                    </select>
+                </p>
+                
+                <p>
+                    <label>רמת דחיפות:</label><br>
+                    <input type="radio" id="low" name="urgency" value="low" checked>
+                    <label for="low">נמוכה</label>
+                    
+                    <input type="radio" id="medium" name="urgency" value="medium">
+                    <label for="medium">בינונית</label>
+                    
+                    <input type="radio" id="high" name="urgency" value="high">
+                    <label for="high">גבוהה (משבית עבודה)</label>
+                </p>
+                
+                <p>
+                    <label for="description">תיאור התקלה:</label><br>
+                    <textarea id="description" name="description" rows="5" cols="40" placeholder="פרטו כאן על מהות התקלה..."></textarea>
+                </p>
+                
+                <p>
+                    <input type="checkbox" id="approve" name="approve" value="yes">
+                    <label for="approve">אני מאשר כי הפרטים שהוזנו נכונים</label>
+                </p>
+                
+                <p>
+                    <input type="submit" value="שלח קריאה">
+                </p>
+                
+            </form>
+        </section>
+    </main>
+
+    <footer>
+        <p>כל הזכויות שמורות למרכז תקשוב © 2026 | ליצירת קשר: support@tikshuv.org.il | טלפון: 073-1234567</p>
+    </footer>
+
+</body>
+</html>
